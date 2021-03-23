@@ -24,7 +24,8 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
 
 </head>
 
@@ -74,6 +75,7 @@
             position: absolute;
             top: 0;
             bottom: 0;
+            font-family: 'Poppins';
             left: 0;
             right: 0;
             height: 200px;
@@ -88,6 +90,7 @@
         
         .img__wrap:hover .img__description {
             visibility: visible;
+            font-family: 'Poppins';
             opacity: 1;
         }
         
@@ -172,6 +175,14 @@
             margin: 5px 0 10px 0;
         }
         
+        .bannertext {
+            font-weight: bold;
+            margin-left: auto;
+            margin-right: auto;
+            display: inline-flex;
+            font-size: 71px;
+        }
+        
         .navbar-light .navbar-nav .nav-link:focus,
         .navbar-light .navbar-nav .nav-link:hover {
             color: #fff;
@@ -187,6 +198,35 @@
             border-radius: 10px;
             box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
             margin-bottom: 20px;
+        }
+        
+        .carousel-caption h5 {
+            font-weight: bold;
+            margin-left: auto;
+            margin-right: auto;
+            display: inline-flex;
+            font-size: 55px;
+        }
+        
+        @media (max-width: 992px) {
+            .carousel-inner {
+                margin-top: 106px;
+                margin-bottom: -61px;
+            }
+            .carousel-caption {
+                bottom: 59px !important;
+            }
+            .carousel-caption h5 {
+                font-weight: bold;
+                margin-left: auto;
+                margin-right: auto;
+                display: inline-flex;
+                font-size: 31px !important;
+            }
+            .card {
+                padding: 10px;
+                margin-bottom: 12px;
+            }
         }
     </style>
 
@@ -238,10 +278,8 @@
             <div class="carousel-item active">
 
                 <img class="d-block w-100" src="https://i.postimg.cc/bNQp0RDW/1.jpg" alt="First slide">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5 style="font-weight: bold;     margin-left: auto;
-                    margin-right: auto;
-                    display: inline-flex;   font-size: 71px;">
+                <div class="carousel-caption d-md-block">
+                    <h5 class="bannertext" style="">
                         Let's Make <br> Something <br> Great..</h5>
                     <p>
                         Join Hands With Arvian Consulting</p>
@@ -285,8 +323,8 @@
             </div>
             <div class="col-sm-8">
                 <img src="http://arvianconsulting.com/wp-content/uploads/2019/08/target-1414788_640.png" style="margin: 0 auto; display: block;" alt="">
-                <h1 style="color: white; text-align: center;">What We Do</h1>
-                <p style="color: white;">Arvian Consulting is a trusted business partner for companies in their efforts to create wealth by expanding their business and create lasting legacies and good governance standards. We provided deliverable solutions to businesses, funds
+                <h1 style="color: white; text-align: center; font-family: 'Poppins';">What We Do</h1>
+                <p style="color: white; font-family: 'Poppins';line-height: 36px;">Arvian Consulting is a trusted business partner for companies in their efforts to create wealth by expanding their business and create lasting legacies and good governance standards. We provided deliverable solutions to businesses, funds
                     and portfolios by way of advisory services. We have set up a partner ecosystem around Arvian Consulting Pvt Ltd to deliver these services seamlessly. Besides speed and accuracy, we bank on trust of our clients to come up with ways
                     to transform their business creating global impact. Arvian Consulting with its team of experts provide services based on trust, transparency and without any conflict of interest in our approach to client dealings.</p>
 
@@ -382,7 +420,7 @@
 
             </div>
             <div class="col-sm-8">
-                <p style="color: white;">We have formed expert team to work seamlessly with our clients and find new ways to transform their business with real world business impact. Our expertise and hands-on approach helps clients reach their set milestone. Our deep knowledge
+                <p style="color: white;font-family: 'Poppins';line-height: 36px;">We have formed expert team to work seamlessly with our clients and find new ways to transform their business with real world business impact. Our expertise and hands-on approach helps clients reach their set milestone. Our deep knowledge
                     of businesses in India, Japan, Singapore, US, Israel, Germany, Netherlands, UK and France help us to stay ahead of the competition. Arvian Consulting’s people, processes and products help our clients get the most from their international
                     business.
 
